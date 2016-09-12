@@ -1,21 +1,192 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>MyMobile - Desenvolvimento de Aplicações para Dispositivos Móveis</title>
-		<!-- Import Google Icon Font -->
-		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<!--Import materialize.css-->
-      	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
 
-      	<!--Let browser know website is optimized for mobile-->
-      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	</head>
-	<body>
-		<!--Import jQuery before materialize.js-->
-      	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      	<script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><i class="material-icons">textsms</i>MyMobile</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a class="smoothScroll" href="#company">A Empresa</a></li>
+        <li><a class="smoothScroll" href="#services">Serviços</a></li>
+        <li><a class="smoothScroll" href="#team">Time</a></li>
+        <li><a class="smoothScroll" href="#contact">Contato</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Home</a></li>
+        <li><a class="smoothScroll" href="#company">A Empresa</a></li>
+        <li><a class="smoothScroll" href="#services">Serviços</a></li>
+        <li><a class="smoothScroll" href="#team">Time</a></li>
+        <li><a class="smoothScroll" href="#contact">Contato</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center purple-text text-lighten-3">Design e Desenvolvimento Mobile</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Conheça mais sobre a MyMobile <i class="material-icons">textsms</i>, uma fábrica de software voltada para desenvolvimento de aplicações para dispositivos móveis.</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light purple lighten-1">Acompanhe seu projeto!</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background11.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div id="company" name="company">
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Sobre a MyMobile</h5>
+
+            <p class="light">Fundada em 2012 por estudantes da Universidade Federal de São Carlos, a MyMobile é uma fábrica de software que visa trazer inovação e o que há de mais moderno para o seu projeto mobile. Trabalhamos com desenvolvimento de aplicações para dispositivos móveis em um processo de desenvolvimento criado para atender os nossos clientes com alta qualidade.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Somos focados em User Experience</h5>
+
+            <p class="light">User Experience leva em consideração a experiência do usuário dentro da aplicação. Uma boa experiência deixa o usuário feliz e isso o faz pensar o quanto a aplicação é incrível e prática. Nós da MyMobile acreditamos no valor de proporcionar aos usuários uma experiência incrível!</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Missão, Visão e Valores</h5>
+
+            <p class="light">A MyMobile tem como missão desenvolver aplicações de qualidade, para que o cliente possa ver sua ideia se tornando realidade. Nossa visão, traz a tecnologia como fator responsável por trazer produtividade e impactos positivos em diversas áreas do mercado. Nossos valores podem ser resumidos em compromisso e transparência com os nossos clientes.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div id="services" name="services">
+  <div class="parallax-container valign-wrapper">
+      <div class="container">
+
+        <div class="row center">
+          <h2 class="header center purple-text text-lighten-3">O que fazemos?</h2>
+          <h5 class="header col s12 light">Damos suporte aos nossos clientes desde a ideia inicial até a entrega do projeto final. Nosso objetivo é tirar a ideia do papel e transformá-la em uma aplicação real.</h5>
+        </div>
+
+<ul class="collapsible" data-collapsible="expandable">
+    <li>
+      <div class="collapsible-header active"><i class="material-icons">stay_current_portrait</i>Design Responsivo</div>
+      <div class="collapsible-body"><p>Dispositivos móveis de diversos tamanhos são cada vez mais utilizados no dia-a-dia. Por isso, criamos aplicações que funcionam bem em qualquer lugar, seja num tablet ou em um smartphone.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header active"><i class="material-icons">loop</i>Gerenciamento de Projeto</div>
+      <div class="collapsible-body"><p>Durante todo o processo de desenvolvimento, você é informado sobre o status do projeto, além dos prazos para a entrega.</p></div>
+    </li>
+  </ul>
+
+    </div>
+    <div class="parallax"><img src="background11.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+  </div>
+
+  <div id="team" name="team">
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div id="contact" name="contact">
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
-      	teste 2
-	</body>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>

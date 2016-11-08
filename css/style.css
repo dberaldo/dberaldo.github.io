@@ -33,6 +33,13 @@ p {
   height: 50%;
 }
 
+#mpv1_btn{
+  width: 70%;
+}
+
+#mpv2_btn{
+  width: 70%;
+}
 
 .parallax-container {
   min-height: 450px;

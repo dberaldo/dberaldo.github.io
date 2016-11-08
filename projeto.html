@@ -36,11 +36,36 @@
   </nav>
   </div>
 
+
 <div class="container">
-    <div class="section">
+
+
+<div class="row center">
+
+          <div class="section">
+
+            <div class="row">
+             
+              <div class="col s12 m6">  
+                <button onclick="btn_mvp1()" id="mpv1_btn" class="btn-large waves-effect waves-light  purple lighten-1">MVP1</button>        
+              </div>
+
+              <div class="col s12 m6" >
+                <button onclick="btn_mvp2()" id="mpv2_btn" class="waves-effect waves-light btn-large purple lighten-1">MVP2</button> 
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+    <div id="div_mvp1" class="section" style="display: none">
 
       <!--   Icon Section   -->
       <div class="row">
+
+        <h5 class="center">MVP 1</h5>
 	      <h5 class="center">Sprint #1</h5>
 	      <p class= "light" align="center">
 		      <br> Task 1: Criar uma tela de login - (Daniela)
@@ -104,6 +129,36 @@
         </p>
       </div>
     </div>
+
+
+
+       <div id="div_mvp2" class="section" style="display: block">
+
+      <!--   Icon Section   -->
+      <div class="row">
+
+        <h5 class="center">MVP 2</h5>
+        <h5 class="center">Sprint #1</h5>
+        <p class= "light" align="center">
+        <br> Task 1: Fazer integração com facebook
+        <br> Task 2: Criar sistema para recuperação de senha para cadastro convencional.
+        <br> Task 3: Acrescentar informações (telefone e endereço) no formulário de cadastro do usuário.
+        <br> Task 4: Acrescentar informações (telefone e endereço) na tabela cliente do BD.
+        <br> Task 15: Apresentar agendamentos em formato de calendário para cliente e admin.
+        </p>
+      </div>
+
+      <div class="row">
+        <h5 class="center">Status Sprint #1</h5>
+     
+        <p class= "light" align="center"  >
+          <br> Reunião Review (04/11): Foi necessário passar as Tasks 1 e 2 para a próxima Sprint (Sprint 2), pois ainda estamos enfrentando problemas com o calendário, o que tomou mais tempo que o previsto.
+          <br> Reunião Review + Planning (08/11): Definimos o backlog da Sprint 2.
+          <br> Task 1: <i class="material-icons">schedule</i> Task 2: <i class="material-icons">schedule</i> Task 3: <i class="material-icons">done</i> Task 4: <i class="material-icons">done</i>
+        Task 15: <i class="material-icons">done</i>           
+        </p>
+      </div>     
+    </div>
   </div>
 
   <footer class="page-footer purple">
@@ -138,6 +193,19 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    
+    function btn_mvp1(){
+      document.getElementById("div_mvp1").style.display="block";
+      document.getElementById("div_mvp2").style.display="none";
+    }
+
+    function btn_mvp2(){
+      document.getElementById("div_mvp2").style.display="block";
+      document.getElementById("div_mvp1").style.display="none";
+    }
+
+  </script>
 
   </body>
 </html>
